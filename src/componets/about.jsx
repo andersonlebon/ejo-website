@@ -40,7 +40,7 @@ const About = () => {
 
               <div className="position-relative mt-4">
                 <img src={about2} className="img-fluid rounded-4" alt=""/>
-                <Link href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></Link>
+                <Link to="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></Link>
               </div>
             </div>
           </div>

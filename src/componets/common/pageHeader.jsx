@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PageHeader = ({title, description}) => {
   return ( 
@@ -16,7 +17,7 @@ const PageHeader = ({title, description}) => {
       <nav>
         <div className="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><Link to="index.html">Home</Link></li>
             <li>{title}</li>
           </ol>
         </div>

@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import logo from '../assets/img/log03.png';
 import {FaPrayingHands} from 'react-icons/fa';
 import { TbPray } from 'react-icons/tb';
@@ -20,13 +20,6 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   // add an outside js file to the project
   // use dom to add the script tag to the head]
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "../assets/js/main.js";
-    script.async = true;
-    document.body.appendChild(script);
-    
-  }, []);
 
   return ( 
     <>
@@ -55,7 +48,7 @@ const Home = () => {
           <div className="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div className="icon-box">
               <div className="icon"><FaPrayingHands/></div>
-              <h4 className="title"><Link href="" className="stretched-link">We pray the Lord</Link></h4>
+              <h4 className="title"><Link to="" className="stretched-link">We pray the Lord</Link></h4>
             </div>
           </div>
           {/* <!--End Icon Box --> */}
