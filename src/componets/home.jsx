@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import logo from '../assets/img/log03.png';
 import {FaPrayingHands} from 'react-icons/fa';
 import { TbPray } from 'react-icons/tb';
