@@ -55,7 +55,7 @@ const Home = () => {
           <div className="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div className="icon-box">
               <div className="icon"><FaPrayingHands/></div>
-              <h4 className="title"><Link href="" className="stretched-link">We pray the Lord</Link></h4>
+              <h4 className="title"><Link to="" className="stretched-link">We pray the Lord</Link></h4>
             </div>
           </div>
           {/* <!--End Icon Box --> */}
