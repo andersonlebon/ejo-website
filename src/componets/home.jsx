@@ -20,13 +20,6 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   // add an outside js file to the project
   // use dom to add the script tag to the head]
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "../assets/js/main.js";
-    script.async = true;
-    document.body.appendChild(script);
-    
-  }, []);
 
   return ( 
     <>

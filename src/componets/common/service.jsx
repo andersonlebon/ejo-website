@@ -53,8 +53,6 @@ const Service = () => {
             navigation
             slidesPerView={2}
             pagination={{ clickable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
             >
 
               <SwiperSlide className="swiper-slide">
