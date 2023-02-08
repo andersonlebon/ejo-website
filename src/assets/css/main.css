@@ -41,6 +41,33 @@ html {
   overflow-x: hidden;
 }
 
+.loading {
+  background-color: var(--color-primary);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  width: 150px;
+  animation: animateload 0.8s  ease infinite;
+}
+
+@keyframes animateload {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -186,7 +213,6 @@ section {
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
-.navigations {}
 
 .scroll-top {
   position: fixed;
@@ -337,6 +363,10 @@ section {
   height: 90px;
   background-color: var(--color-primary);
   color: var(--color-default);
+}
+
+.header a:hover {
+  cursor: pointer;
 }
 
 .header.sticked {
@@ -528,6 +558,11 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
+.navigations {
+  position: relative;
+  z-index: 9999;
+  background-color: var(--bg-body);
+}
 @media (max-width: 1279px) {
   .navbar {
     position: fixed;
@@ -1379,9 +1414,13 @@ section {
   list-style: none;
 }
 
+.see-more {
+  width: fit-content;
+}
+
 .portfolio-details .portfolio-info .btn-visit:hover, .see-more:hover {
   background: var(--color-blue-light);
-  color: var(--color-blue-light);
+  color: var(--color-primary);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1405,7 +1444,8 @@ section {
 .portfolio-details .portfolio-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
-  border: 6px solid var(--color-default);
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.302);
   float: left;
   margin: 0 10px 0 0;
 }
@@ -1425,7 +1465,7 @@ section {
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--color-blue-light);
   font-size: 26px;
   line-height: 0;
 }
@@ -2810,4 +2850,59 @@ section {
 
 .footer .credits a {
   color: var(--color-default);
+}
+
+/* footer in mobive version */
+
+@media (max-width: 900px) { 
+  .portfolio {
+    margin-bottom: 600px;
+  }
+
+  .clients-slider img {
+    max-width: 130px !important;
+  }
+
+  .footer .footer-contact {
+    margin: 0 !important;
+    font-size: 0.7rem;
+    padding: 0 !important;
+    display: none;
+  }
+  .footer .footer-contact h4 {
+    margin: 0 !important;
+    padding: 5px ;
+  }
+
+  .footer .footer-contact br {
+    line-height: 0;
+  }
+
+  .footer .footer-contact p {
+    margin: 0 !important;
+  }
+
+  .footer .social-links-footer a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .footer {
+    padding: 20px;
+    font-size: 12px;
+  }
+  
+  .footer ul li  {
+    padding-bottom: 3px !important;
+  }
+
+  .footer .footer-info {
+    /* margin : 0 !important; */
+  }
+
+  .footer .footer-info img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

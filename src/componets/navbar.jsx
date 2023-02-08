@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/img/log03.png';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink} from 'react-scroll'
 
 const NavBar = () => {
   return ( 
@@ -13,11 +14,11 @@ const NavBar = () => {
       <nav id="navbar" className="navbar">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="#about">About</Link></li>
-          <li><Link to="#services">Services</Link></li>
+          <li><ScrollLink to="about">About</ScrollLink></li>
+          <li><ScrollLink to="services">Services</ScrollLink></li>
           <li><Link to="/activities">Activities</Link></li>
-          <li><Link to="#team">Team</Link></li>
-          <li><Link to="testimonials">Testimonies</Link></li>
+          <li><ScrollLink to="team">Team</ScrollLink></li>
+          <li><ScrollLink to="testimonials">Testimonies</ScrollLink></li>
           <li className="dropdown"><Link to="#"><span>Ejo Takos</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
               <li><Link to="#">Menu</Link></li>
@@ -32,7 +33,7 @@ const NavBar = () => {
               <li><Link to="#">...</Link></li>
             </ul>
           </li>
-          <li><Link to="#contact">Contact</Link></li>
+          <li><ScrollLink to="contact">Contact</ScrollLink></li>
         </ul>
       </nav>
       {/* <!-- .navbar --> */}

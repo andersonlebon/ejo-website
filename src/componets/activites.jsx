@@ -2,23 +2,28 @@ import React from 'react'
 import Activity1 from '../assets/img/portfolio/app-1.jpg'
 import Activity2 from '../assets/img/portfolio/product-1.jpg'
 import Activity3 from '../assets/img/portfolio/branding-1.jpg'
-import Activity4 from '../assets/img/portfolio/books-1.jpg'
-import Activity5 from '../assets/img/portfolio/app-2.jpg'
-import Activity6 from '../assets/img/portfolio/product-2.jpg'
-import Activity7 from '../assets/img/portfolio/branding-2.jpg'
-import Activity8 from '../assets/img/portfolio/books-2.jpg'
-import Activity9 from '../assets/img/portfolio/app-3.jpg'
-import Activity10 from '../assets/img/portfolio/product-3.jpg'
-import Activity11 from '../assets/img/portfolio/branding-3.jpg'
-import Activity12 from '../assets/img/portfolio/books-3.jpg'
+import ejo1 from '../assets/img/ejo/ejo1.jpg'
+import ejo2 from '../assets/img/ejo/ejo2.jpg'
+import ejo3 from '../assets/img/ejo/ejo3.jpg'
+import ejo4 from '../assets/img/ejo/ejo4.jpg'
+import ejo5 from '../assets/img/ejo/ejo5.jpg'
+import ejo6 from '../assets/img/ejo/ejo6.jpg'
+import ejo7 from '../assets/img/ejo/ejo7.jpg'
+import ejo8 from '../assets/img/ejo/ejo8.jpg'
+
+
 
 import { Link } from 'react-router-dom'
+import PageHeader from './common/pageHeader'
 
 const Activities = ({ more }) => {
   return (
-    <section id="portfolio" class="portfolio sections-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
+    <>
+  { more &&  <PageHeader title="Nos Activites recentes" description="Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum
+            nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti"/>}
+    <section id="portfolio" className="portfolio sections-bg">
+      <div className="container d-flex flex-column" data-aos="fade-up">
+        <div className="section-header">
           <h2>Nos Activites recentes</h2>
           <p>
             Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum
@@ -27,7 +32,7 @@ const Activities = ({ more }) => {
         </div>
 
         <div
-          class="portfolio-isotope"
+          className="portfolio-isotope"
           data-portfolio-filter="*"
           data-portfolio-layout="masonry"
           data-portfolio-sort="original-order"
@@ -36,8 +41,8 @@ const Activities = ({ more }) => {
         >
           {more && (
             <div>
-              <ul class="portfolio-flters">
-                <li data-filter="*" class="filter-active">
+              <ul className="portfolio-flters">
+                <li data-filter="*" className="filter-active">
                   All
                 </li>
                 <li data-filter=".filter-app">App</li>
@@ -49,20 +54,20 @@ const Activities = ({ more }) => {
             </div>
           )}
 
-          <div class="row gy-4 portfolio-container">
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
+          <div className="row gy-4 portfolio-container">
+            <div className="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
                 <Link
                   to="/activities/details"
                   data-gallery="portfolio-gallery-app"
-                  class="glightbox"
+                  className="glightbox"
                 >
-                  <img src={Activity1} class="img-fluid" alt="" />
+                  <img src={ejo1} className="img-fluid" alt="" />
                 </Link>
-                <div class="portfolio-info">
+                <div className="portfolio-info">
                   <h4>
                     <Link to="portfolio-details.html" title="More Details">
-                      App 1
+                      Activite 1
                     </Link>
                   </h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -71,19 +76,19 @@ const Activities = ({ more }) => {
             </div>
             {/* <!-- End Portfolio Item --> */}
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
+            <div className="col-xl-4 col-md-6 portfolio-item filter-product">
+              <div className="portfolio-wrap">
                 <Link
                   to="/activities/details"
                   data-gallery="portfolio-gallery-app"
-                  class="glightbox"
+                  className="glightbox"
                 >
-                  <img src={Activity2} class="img-fluid" alt="" />
+                  <img src={ejo2} className="img-fluid" alt="" />
                 </Link>
-                <div class="portfolio-info">
+                <div className="portfolio-info">
                   <h4>
                     <Link to="portfolio-details.html" title="More Details">
-                      Product 1
+                      Activity 1
                     </Link>
                   </h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -92,19 +97,19 @@ const Activities = ({ more }) => {
             </div>
             {/* <!-- End Portfolio Item --> */}
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
+            <div className="col-xl-4 col-md-6 portfolio-item filter-branding">
+              <div className="portfolio-wrap">
                 <Link
                   to="/activities/details"
                   data-gallery="portfolio-gallery-app"
-                  class="glightbox"
+                  className="glightbox"
                 >
-                  <img src={Activity3} class="img-fluid" alt="" />
+                  <img src={ejo3} className="img-fluid" alt="" />
                 </Link>
-                <div class="portfolio-info">
+                <div className="portfolio-info">
                   <h4>
                     <Link to="portfolio-details.html" title="More Details">
-                      Branding 1
+                      Activity 1
                     </Link>
                   </h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -114,19 +119,19 @@ const Activities = ({ more }) => {
             {/* <!-- End Portfolio Item --> */}
             {more && (
               <>
-                <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-books">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity3} class="img-fluid" alt="" />
+                      <img src={ejo4} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Books 1
+                          Activ 1
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -135,19 +140,19 @@ const Activities = ({ more }) => {
                 </div>
                 {/* <!-- End Portfolio Item --> */}
 
-                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-app">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity1} class="img-fluid" alt="" />
+                      <img src={ejo5} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          App 2
+                          Activity 2
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -156,19 +161,19 @@ const Activities = ({ more }) => {
                 </div>
                 {/* <!-- End Portfolio Item --> */}
 
-                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-product">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity2} class="img-fluid" alt="" />
+                      <img src={ejo6} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Product 2
+                          Activity 2
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -177,19 +182,19 @@ const Activities = ({ more }) => {
                 </div>
                 {/* <!-- End Portfolio Item --> */}
 
-                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-branding">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity3} class="img-fluid" alt="" />
+                      <img src={ejo7} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Branding 2
+                          Activity 2
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -197,40 +202,19 @@ const Activities = ({ more }) => {
                   </div>
                 </div>
                 {/* <!-- End Portfolio Item --> */}
-                <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-books">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity3} class="img-fluid" alt="" />
+                      <img src={ejo8} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Books 2
-                        </Link>
-                      </h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- End Portfolio Item --> */}
-
-                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <Link
-                      to="/activities/details"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox"
-                    >
-                      <img src={Activity1} class="img-fluid" alt="" />
-                    </Link>
-                    <div class="portfolio-info">
-                      <h4>
-                        <Link to="portfolio-details.html" title="More Details">
-                          App 3
+                          Activ 2
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -239,19 +223,19 @@ const Activities = ({ more }) => {
                 </div>
                 {/* <!-- End Portfolio Item --> */}
 
-                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-app">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity2} class="img-fluid" alt="" />
+                      <img src={ejo1} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Product 3
+                          Activity 3
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -260,19 +244,19 @@ const Activities = ({ more }) => {
                 </div>
                 {/* <!-- End Portfolio Item --> */}
 
-                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-product">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity3} class="img-fluid" alt="" />
+                      <img src={ejo2} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Branding 3
+                          Activity 3
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -281,19 +265,40 @@ const Activities = ({ more }) => {
                 </div>
                 {/* <!-- End Portfolio Item --> */}
 
-                <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-                  <div class="portfolio-wrap">
+                <div className="col-xl-4 col-md-6 portfolio-item filter-branding">
+                  <div className="portfolio-wrap">
                     <Link
                       to="/activities/details"
                       data-gallery="portfolio-gallery-app"
-                      class="glightbox"
+                      className="glightbox"
                     >
-                      <img src={Activity3} class="img-fluid" alt="" />
+                      <img src={ejo3} className="img-fluid" alt="" />
                     </Link>
-                    <div class="portfolio-info">
+                    <div className="portfolio-info">
                       <h4>
                         <Link to="portfolio-details.html" title="More Details">
-                          Books 3
+                          Activity 3
+                        </Link>
+                      </h4>
+                      <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End Portfolio Item --> */}
+
+                <div className="col-xl-4 col-md-6 portfolio-item filter-books">
+                  <div className="portfolio-wrap">
+                    <Link
+                      to="/activities/details"
+                      data-gallery="portfolio-gallery-app"
+                      className="glightbox"
+                    >
+                      <img src={ejo4} className="img-fluid" alt="" />
+                    </Link>
+                    <div className="portfolio-info">
+                      <h4>
+                        <Link to="portfolio-details.html" title="More Details">
+                          Activ 3
                         </Link>
                       </h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -308,12 +313,13 @@ const Activities = ({ more }) => {
 
         <Link
           to="/activities"
-          class="see-more mt-4"
+          className="see-more mt-4"
         >
-          See More
+          See More <i className="bi bi-arrow-right"></i>
         </Link>
       </div>
     </section>
+    </>
   )
 }
 

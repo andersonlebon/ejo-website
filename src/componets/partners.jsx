@@ -11,22 +11,22 @@ import client7 from '../assets/img/clients/client-8.png';
 const Partners = () => {
   return (
     // <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients sections-bg">
-        <div class="section-header p-2">
+    <section id="clients" className="clients sections-bg">
+        <div className="section-header p-2">
           <h2>Our Partners</h2>
           <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
         </div>
-      <div class="container" data-aos="zoom-out">
-        <div class="clients-slider swiper">
-          <div class="d-flex align-items-center">
-            <div class=""><img src={client1} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client8} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client2} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client3} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client4} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client5} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client6} class="img-fluid p-4" alt=""/></div>
-            <div class=""><img src={client7} class="img-fluid p-4" alt=""/></div>
+      <div className="container" data-aos="zoom-out">
+        <div className="clients-slider swiper">
+          <div className="d-flex align-items-center">
+            <div className=""><img src={client1} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client8} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client2} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client3} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client4} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client5} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client6} className="img-fluid p-4" alt=""/></div>
+            <div className=""><img src={client7} className="img-fluid p-4" alt=""/></div>
           </div>
         </div>
 

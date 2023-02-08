@@ -2,11 +2,11 @@ import React from 'react';
 
 const PageHeader = ({title, description}) => {
   return ( 
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
+    <div className="breadcrumbs">
+      <div className="page-header d-flex align-items-center">
+        <div className="container position-relative">
+          <div className="row d-flex justify-content-center">
+            <div className="col-lg-6 text-center">
               <h2>{title}</h2>
               <p>{description}</p>
             </div>
@@ -14,7 +14,7 @@ const PageHeader = ({title, description}) => {
         </div>
       </div>
       <nav>
-        <div class="container">
+        <div className="container">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>{title}</li>
