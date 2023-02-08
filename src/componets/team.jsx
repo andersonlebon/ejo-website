@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import team1 from '../assets/img/team/team-1.jpg';
 import team2 from '../assets/img/team/team-2.jpg';
 import team3 from '../assets/img/team/team-3.jpg';
@@ -24,10 +25,10 @@ const Team = () => {
             <h4>Walter White</h4>
             <span>Web Development</span>
             <div className="social">
-              <a href=""><i className="bi bi-twitter"></i></a>
-              <a href=""><i className="bi bi-facebook"></i></a>
-              <a href=""><i className="bi bi-instagram"></i></a>
-              <a href=""><i className="bi bi-linkedin"></i></a>
+              <Link to=""><i className="bi bi-twitter"></i></Link>
+              <Link to=""><i className="bi bi-facebook"></i></Link>
+              <Link to=""><i className="bi bi-instagram"></i></Link>
+              <Link to=""><i className="bi bi-linkedin"></i></Link>
             </div>
           </div>
         </div>
@@ -40,10 +41,10 @@ const Team = () => {
             <h4>Sarah Jhinson</h4>
             <span>Marketing</span>
             <div className="social">
-              <a href=""><i className="bi bi-twitter"></i></a>
-              <a href=""><i className="bi bi-facebook"></i></a>
-              <a href=""><i className="bi bi-instagram"></i></a>
-              <a href=""><i className="bi bi-linkedin"></i></a>
+              <Link to=""><i className="bi bi-twitter"></i></Link>
+              <Link to=""><i className="bi bi-facebook"></i></Link>
+              <Link to=""><i className="bi bi-instagram"></i></Link>
+              <Link to=""><i className="bi bi-linkedin"></i></Link>
             </div>
           </div>
         </div>
@@ -56,10 +57,10 @@ const Team = () => {
             <h4>William Anderson</h4>
             <span>Content</span>
             <div className="social">
-              <a href=""><i className="bi bi-twitter"></i></a>
-              <a href=""><i className="bi bi-facebook"></i></a>
-              <a href=""><i className="bi bi-instagram"></i></a>
-              <a href=""><i className="bi bi-linkedin"></i></a>
+              <Link to=""><i className="bi bi-twitter"></i></Link>
+              <Link to=""><i className="bi bi-facebook"></i></Link>
+              <Link to=""><i className="bi bi-instagram"></i></Link>
+              <Link to=""><i className="bi bi-linkedin"></i></Link>
             </div>
           </div>
         </div>
@@ -72,10 +73,10 @@ const Team = () => {
             <h4>Amanda Jepson</h4>
             <span>Accountant</span>
             <div className="social">
-              <a href=""><i className="bi bi-twitter"></i></a>
-              <a href=""><i className="bi bi-facebook"></i></a>
-              <a href=""><i className="bi bi-instagram"></i></a>
-              <a href=""><i className="bi bi-linkedin"></i></a>
+              <Link to=""><i className="bi bi-twitter"></i></Link>
+              <Link to=""><i className="bi bi-facebook"></i></Link>
+              <Link to=""><i className="bi bi-instagram"></i></Link>
+              <Link to=""><i className="bi bi-linkedin"></i></Link>
             </div>
           </div>
         </div>

@@ -1,9 +1,7 @@
 
-import React, { useEffect, useRef } from 'react';
-import hero from '../assets/img/hero-img.svg';
+import React, { useEffect } from 'react';
 import logo from '../assets/img/log03.png';
-import logonav from '../assets/img/logo.png';
-import {FaPrayingHands, FaQq} from 'react-icons/fa';
+import {FaPrayingHands} from 'react-icons/fa';
 import { TbPray } from 'react-icons/tb';
 import { RiHandHeartLine } from 'react-icons/ri';
  
@@ -16,6 +14,7 @@ import Footer from './footer';
 import Team from './team';
 import FaqSection from './faq';
 import Activities from './activites';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -39,8 +38,8 @@ const Home = () => {
           <h2>Welcome to <span className='ejo'>EjO<span>.</span></span></h2>
           <p>We pray and woship God with our tallents </p>
           <div className="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" className="btn-get-started">Join Us</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <Link to="#about" className="btn-get-started">Join Us</Link>
+            <Link to="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></Link>
           </div>
         </div>
         <div className="col-lg-6 order-1 order-lg-2 m-0">
@@ -56,7 +55,7 @@ const Home = () => {
           <div className="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div className="icon-box">
               <div className="icon"><FaPrayingHands/></div>
-              <h4 className="title"><a href="" className="stretched-link">We pray the Lord</a></h4>
+              <h4 className="title"><Link href="" className="stretched-link">We pray the Lord</Link></h4>
             </div>
           </div>
           {/* <!--End Icon Box --> */}
@@ -64,14 +63,14 @@ const Home = () => {
           <div className="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div className="icon-box">
               <div className="icon"><TbPray/></div>
-              <h4 className="title"><a href="" className="stretched-link">We dance for His Glory</a></h4>
+              <h4 className="title"><Link to="" className="stretched-link">We dance for His Glory</Link></h4>
             </div>
           </div>
           {/* <!--End Icon Box --> */}
           <div className="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div className="icon-box">
               <div className="icon"><RiHandHeartLine/></div>
-              <h4 className="title"><a href="" className="stretched-link">We assist ophans</a></h4>
+              <h4 className="title"><Link to="" className="stretched-link">We assist ophans</Link></h4>
             </div>
           </div>
 
@@ -80,7 +79,7 @@ const Home = () => {
           <div className="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div className="icon-box">
               <div className="icon"><i className="bi bi-geo-alt"></i></div>
-              <h4 className="title"><a href="#1" className="stretched-link"> Here in DRC/Goma</a></h4>
+              <h4 className="title"><Link to="#1" className="stretched-link"> Here in DRC/Goma</Link></h4>
             </div>
           </div>
 
@@ -101,7 +100,7 @@ const Home = () => {
       <Contact/>
     </main>
     <Footer/>
-    <a href="#" className="scroll-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+    <Link to="#" className="scroll-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></Link>
 
   </>
    );

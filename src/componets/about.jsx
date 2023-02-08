@@ -1,6 +1,7 @@
 import React from 'react';
 import about from '../assets/img/about1.jpg';
 import about2 from '../assets/img/about-2.jpg';
+import { Link } from 'react-scroll';
 
 
 const About = () => {
@@ -39,7 +40,7 @@ const About = () => {
 
               <div className="position-relative mt-4">
                 <img src={about2} className="img-fluid rounded-4" alt=""/>
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></a>
+                <Link href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></Link>
               </div>
             </div>
           </div>

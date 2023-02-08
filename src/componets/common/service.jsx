@@ -1,23 +1,23 @@
 import React from 'react'
 import PageHeader from './pageHeader'
-import app1 from '../../assets/img/portfolio/app-1.jpg'
-import app2 from '../../assets/img/portfolio/app-2.jpg'
-import app3 from '../../assets/img/portfolio/app-3.jpg'
-import product1 from '../../assets/img/portfolio/product-1.jpg'
-import product2 from '../../assets/img/portfolio/product-2.jpg'
-import branding1 from '../../assets/img/portfolio/branding-1.jpg'
-import branding2 from '../../assets/img/portfolio/branding-2.jpg'
-import books1 from '../../assets/img/portfolio/books-1.jpg'
-import books2 from '../../assets/img/portfolio/books-2.jpg'
+// import app1 from '../../assets/img/portfolio/app-1.jpg'
+// import app2 from '../../assets/img/portfolio/app-2.jpg'
+// import app3 from '../../assets/img/portfolio/app-3.jpg'
+// import product1 from '../../assets/img/portfolio/product-1.jpg'
+// import product2 from '../../assets/img/portfolio/product-2.jpg'
+// import branding1 from '../../assets/img/portfolio/branding-1.jpg'
+// import branding2 from '../../assets/img/portfolio/branding-2.jpg'
+// import books1 from '../../assets/img/portfolio/books-1.jpg'
+// import books2 from '../../assets/img/portfolio/books-2.jpg'
 
 import ejo1 from '../../assets/img/ejo/ejo1.jpg'
 import ejo2 from '../../assets/img/ejo/ejo2.jpg'
 import ejo3 from '../../assets/img/ejo/ejo3.jpg'
 import ejo4 from '../../assets/img/ejo/ejo4.jpg'
-import ejo5 from '../../assets/img/ejo/ejo5.jpg'
-import ejo6 from '../../assets/img/ejo/ejo6.jpg'
-import ejo7 from '../../assets/img/ejo/ejo7.jpg'
-import ejo8 from '../../assets/img/ejo/ejo8.jpg'
+// import ejo5 from '../../assets/img/ejo/ejo5.jpg'
+// import ejo6 from '../../assets/img/ejo/ejo6.jpg'
+// import ejo7 from '../../assets/img/ejo/ejo7.jpg'
+// import ejo8 from '../../assets/img/ejo/ejo8.jpg'
 
 
 import 'swiper/css';
@@ -30,6 +30,7 @@ import { Pagination, Scrollbar, A11y, Navigation } from 'swiper';
 
 
 import testimonials1 from '../../assets/img/testimonials/testimonials-1.jpg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -121,8 +122,8 @@ const Service = () => {
                 <li><strong>Category</strong> <span>Street Danse</span></li>
                 <li><strong>Lieux</strong> <span>Mosque KinMarchet</span></li>
                 <li><strong>Date</strong> <span>01 March, 2020</span></li>
-                <li><strong>Youtube URL</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" className="btn-visit align-self-start">Visit Website</a></li>
+                <li><strong>Youtube URL</strong> <Link to="#">www.example.com</Link></li>
+                <li><Link to="#" className="btn-visit align-self-start">Visit Website</Link></li>
               </ul>
             </div>
           </div>

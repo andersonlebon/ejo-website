@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './assets/css/main.css';
 import Home from './componets/home';
 // import bootstrap js file
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Popper from '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,10 +11,7 @@ import NavBar from './componets/navbar';
 import ServicesPage from './componets/pages/activities';
 import Service from './componets/common/service';
 import Footer from './componets/footer';
- import React, { useState, useEffect } from 'react';
  import Loading from './componets/common/loading';
-import PageHeader from './componets/common/pageHeader';
-
 
 
 
